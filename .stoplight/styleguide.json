@@ -1,0 +1,28 @@
+{
+  "name": "api-specs-test-json",
+  "description": "",
+  "spectralExtends": [],
+  "extends": [],
+  "formats": [
+    "oas2",
+    "oas3",
+    "oas3.0",
+    "oas3.1"
+  ],
+  "aliases": {},
+  "rules": {
+    "info-must-have-description": {
+      "id": "N2qSDahvqMyT-XNAU32zm",
+      "given": [
+        "$.info"
+      ],
+      "severity": "error",
+      "then": {
+        "function": "truthy",
+        "field": "description"
+      },
+      "name": "info-must-have-description"
+    }
+  },
+  "extendedDefault": false
+}
