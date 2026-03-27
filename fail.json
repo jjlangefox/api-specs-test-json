@@ -1,31 +1,13 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Sample API",
-    "version": "1.0.0",
-    "description": "API description",
-    "contact": {
-      "name": "API Support",
-      "email": "support@example.com"
-    }
+    "title": "Fail API",
+    "version": "1.0.0"
   },
-  "servers": [
-    {
-      "url": "https://api.example.com"
-    }
-  ],
-  "tags": [
-    {
-      "name": "users",
-      "description": "Operations related to users"
-    }
-  ],
   "paths": {
-    "/users": {
+    "/items": {
       "get": {
-        "operationId": "getUsers",
-        "description": "Retrieve all users",
-        "tags": ["accounts"],  // ❌ Not defined in root tags
+        "summary": "List items",
         "responses": {
           "200": {
             "description": "OK"

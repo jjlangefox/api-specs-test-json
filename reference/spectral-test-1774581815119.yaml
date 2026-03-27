@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "spectral:oas"
-  ],
   "rules": {
     "info-must-have-description": {
       "given": "$.info",
